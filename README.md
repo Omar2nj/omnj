@@ -6,7 +6,7 @@ simple to use.
 
 Can be found on telegram as [OMAR](https://t.me/omnj_bot) .
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Omarnj/omnj)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Omar2nj/omnj)
 
 
 ## Starting the bot.
