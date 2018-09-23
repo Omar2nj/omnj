@@ -19,9 +19,9 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-Hai {}, 
+Hello {}, 
 My name is {}! 
-I'm a group manager bot maintained by [this person](tg://user?id={}). I'm built in python3, using the python-telegram-bot library.
+I'm a group manager bot maintained by [Omar Najjar](tg://user?id={}). I'm built in python3, using the python-telegram-bot library.
 You can find the list of available commands with /help...
 
 
@@ -30,14 +30,13 @@ You can find the list of available commands with /help...
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
+Hey there!
 I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
 the things I can help you with.
 *Main* commands available:
  - /start: start the bot
  - /help: PM's you this message.
  - /help <module name>: PM's you info about that module.
- - /donate: information about how to donate!
  - /settings:
    - in PM: will send you your settings for all supported modules.
    - in a group: will redirect you to pm, with all that chat's settings.
@@ -372,7 +371,7 @@ def donate(bot: Bot, update: Update):
         update.effective_message.reply_text(DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
         if OWNER_ID != 254318997 and DONATION_LINK:
-            update.effective_message.reply_text("You can also donate to the person currently running me "
+            update.effective_message.reply_text("If you have any question you can ask me"
                                                 "[here]({})".format(DONATION_LINK),
                                                 parse_mode=ParseMode.MARKDOWN)
 
